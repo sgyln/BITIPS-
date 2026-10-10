@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body { height: 100%; }
+  body { @apply bg-bg text-tx text-sm leading-5; }
+  button { @apply cursor-pointer disabled:cursor-default disabled:opacity-50; }
+}
+@layer components {
+  .lab { @apply text-[11px] leading-4 font-medium tracking-[.5px]; }
+  .btn { @apply h-10 px-6 rounded-full bg-card border border-bd font-semibold whitespace-nowrap; }
+  .btn-sm { @apply h-8 px-4 rounded-full bg-card border border-bd font-semibold whitespace-nowrap; }
+  .btn-p { @apply h-12 px-8 rounded-full bg-tx border border-tx text-white font-semibold whitespace-nowrap; }
+  .chip { @apply px-3.5 py-2 rounded-full border border-bd bg-card font-semibold; }
+  .chip-on { @apply bg-tx border-tx text-white; }
+  .box { @apply bg-card border border-bd rounded-[20px] p-5; }
+  .input { @apply w-full h-12 rounded-xl border border-bd px-3.5 bg-white outline-none focus:border-tx; }
+  .badge { @apply inline-block px-2.5 py-[3px] rounded-full text-[11px] leading-4 font-medium tracking-[.5px]; }
+  .note { @apply bg-bg2 rounded-xl px-3.5 py-2.5 my-3 text-tx2; }
+  .note-w { @apply bg-ebg text-efg; }
+  .row { @apply flex justify-between gap-3 py-2.5 border-b border-bd; }
+  .opt { @apply flex w-full min-h-12 items-center justify-between gap-2.5 px-3.5 py-2 border border-bd rounded-xl mt-2 bg-white text-left; }
+  .spin { @apply w-14 h-14 mx-auto rounded-full border-[5px] border-bd border-t-br animate-spin; }
+  .th { @apply text-left lab text-tx2 px-3 py-2 border-b border-bd whitespace-nowrap; }
+  .td { @apply px-3 py-2.5 border-b border-bd align-top; }
+}
+.leaflet-container { font-family: inherit; }
+.pin { background: #e8592a; color: #fff; border: 3px solid #fff; border-radius: 9999px; width: 30px; height: 30px; display: grid; place-items: center; font-weight: 600; font-size: 13px; box-shadow: 0 1px 4px rgba(0,0,0,.3); }
